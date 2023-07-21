@@ -1,0 +1,84 @@
+@import url(https://fonts.google.com/specimen/Roboto);
+
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--DarkSlateGrey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 5%;
+    padding: 50px;
+    width: 445px;
+}
+
+.informations img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.informations h1 {
+    color: var(--DarkSlateGrey);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.informations p {
+    margin-bottom: 30px;
+    color: var(--DarkSlateGrey);
+}
+
+.informations button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.informations button:hover {
+    background-color: var(--Tomato);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 480px){
+    body {
+        background-color: var(--White);
+    }
+
+    .container {
+        padding: 0;
+        padding-top: 100px;
+    }
+
+    .informations p {
+        margin-bottom: 200px;
+    }
+}

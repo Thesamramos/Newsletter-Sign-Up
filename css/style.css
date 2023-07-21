@@ -109,6 +109,12 @@ body {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.informations .form button:hover {
+    background-color: var(--Tomato);
+    transition: 0.5s;
 }
 
 @media screen and (max-width: 480px){
