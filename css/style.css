@@ -1,0 +1,134 @@
+@import url(https://fonts.google.com/specimen/Roboto);
+
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--DarkSlateGrey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.container .img_mobile {
+    display: none;
+}
+
+.img_desktop {
+    padding: 20px;
+}
+
+.informations {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informations h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--DarkSlateGrey);
+    margin-bottom: 20px;
+}
+
+.informations p, .informations .list_span, .informations .span {
+    color: var(--DarkSlateGrey);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.informations .list_span {
+    display: flex;
+    flex-direction: column;
+}
+
+.informations .list_span .span {
+    display: flex;
+    align-items: center;
+}
+
+.informations .list_span span {
+    margin-left: 10px;
+}
+
+.informations .list_span img {
+    height: 20px
+}
+
+.informations ul span{
+    display: flex;
+    margin-left: 5px;
+}
+
+.informations .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.informations .form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.informations .form input {
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: solid 1px var(--Grey);
+    border-radius: 10px;
+    margin-bottom: 20px;
+} 
+
+.informations .form button {
+    background-color: var(--DarkSlateGrey);
+    padding: 15px 20px;
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px){
+    .container {
+        flex-direction: column;
+        border-radius: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .container .img_mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .container .img_desktop {
+        display: none;
+    }
+
+    .informations {
+        padding: 0;
+    }
+}
