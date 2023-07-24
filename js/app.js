@@ -15,7 +15,7 @@ form.addEventListener('submit', function(event) {
         inputEmail.style.border = "solid 1px var(--Grey)";
         erro.style.display = "none";
         sessionStorage.setItem('email', emailValue);
-        window.location.href = "/success.html";
+        window.location.href = "./html/success.html";
     }
 });
 

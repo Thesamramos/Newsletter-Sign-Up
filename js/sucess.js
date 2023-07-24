@@ -5,5 +5,5 @@ textCard.textContent = email;
 
 const dismissBtn = document.getElementById("dismiss_btn");
 dismissBtn.addEventListener('click', function() {
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
 })
