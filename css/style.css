@@ -82,17 +82,23 @@ body {
     margin-left: 5px;
 }
 
-.informations .form {
+.informations #form {
     display: flex;
     flex-direction: column;
 }
 
-.informations .form label {
+#form .span_label {
     font-weight: bold;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.span_label span {
+    display: none;
+    color: red;
 }
 
-.informations .form input {
+.informations #form input {
     padding: 15px 20px;
     font-size: 1rem;
     border: solid 1px var(--Grey);
@@ -100,7 +106,7 @@ body {
     margin-bottom: 20px;
 } 
 
-.informations .form button {
+.informations #form button {
     background-color: var(--DarkSlateGrey);
     padding: 15px 20px;
     color: var(--White);
@@ -112,7 +118,7 @@ body {
     transition: 0.5s;
 }
 
-.informations .form button:hover {
+.informations #form button:hover {
     background-color: var(--Tomato);
     transition: 0.5s;
 }
